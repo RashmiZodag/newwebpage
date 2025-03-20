@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+.headline-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+.headline-container::before,
+.headline-container::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+.headline {
+    font-size: 18px;
+    font-weight: bold;
+    color: #008080;
+    text-align: center;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+.container {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+.bundle-option {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.bundle-option:hover {
+    background-color: #f0f0f0;
+    border-color: #008080;
+}
+.bundle-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.bundle-header input {
+    margin-right: 5px;
+}
+.bundle-details {
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.bundle-text {
+    display: block;
+    font-weight: bold;
+}
+.bundle-price {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+.discount {
+    font-weight: bold;
+    color: #080808;
+    text-align: right;
+    margin-left: auto;
+}
+.options {
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 4px;
+    gap: 10px;
+}
+.bundle-option:hover .options {
+    display: flex;
+}
+.options select {
+    width: 20%;
+    padding: 4px;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #555;
+    margin: 16px 0;
+    padding: 0 8px;
+}
+.add-to-cart {
+    width: 100%;
+    background-color: #008080;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.most-popular {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #008080;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
